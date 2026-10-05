@@ -13,9 +13,9 @@
 
 ## Pengujian GET dan POST
 
-- Hasil pengujian GET: []
-- Contoh URL encoding yang ditemukan: []
-- Hasil pengujian POST: []
+- Hasil pengujian GET: [file:///C:/laragon/www/PWD/2622500002-PWD-SI1A-2627O/2622500002-PWD-SI1A-26270/pertemuan-03/index.html]
+- Contoh URL encoding yang ditemukan: [tidak ada]
+- Hasil pengujian POST: [tidak ada perubahan]
 
 ## CSS Dasar
 
@@ -26,10 +26,10 @@
 
 ## Pengujian dan Perbaikan
 
-- Galat yang ditemukan: []
-- Penyebab galat: []
-- Perbaikan yang dilakukan: []
-- Hasil pengujian ulang: []
+- Galat yang ditemukan: [tidak ada]
+- Penyebab galat: [tidak ada]
+- Perbaikan yang dilakukan: [tidak ada]
+- Hasil pengujian ulang: [tidak ada]
 
 ## GitHub Pages
 
