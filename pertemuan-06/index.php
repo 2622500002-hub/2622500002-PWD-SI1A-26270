@@ -84,7 +84,7 @@ switch ($programStudi) {
  
         <img src="img/foto-profil.jpg" alt="foto Arini" /> 
       </section> 
- 
+  
       <section id="about"> 
         <h2>Tentang Saya</h2> 
  
