@@ -1,5 +1,50 @@
+<?php
+// P6: PHP dasar dan pemrograman sisi peladen
+// Bagian 1: Variabel dan konstanta
+$nim = "2622500002";
+$namaMahasiswa = "Arini Susilawati";
+$programStudi = "SI";
+$tahunAkademik = "2026/2027";
+$semester = 1;
+$ipk = 3.75;
+$statusAktif = true;
+$catatanTambahan = null;
+
+const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
+const PROFIL_GITHUB = "satpamal";
+
+// Bagian 2: Operator
+$batasSemester = 8;
+$sisaSemester = $batasSemester - $semester;
+$semesterValid = $semester >= 1 && $semester <= $batasSemester;
+$statusSemester = ($semesterValid && $statusAktif) ? "Sesuai rentang" : "Perlu diperiksa";
+
+// Bagian 3: Percabangan if-elseif-else
+if ($semester < 3) {
+	$keteranganSemester = "Semester awal";
+} elseif ($semester <= 6) {
+	$keteranganSemester = "Semester menengah";
+} else {
+	$keteranganSemester = "Semester akhir";
+}
+
+$namaProdi = ($programStudi == "SI") ? "Sistem Informasi" : (($programStudi == "TI") ? "Teknik Informatika" : "Lainnya");
+
+// Bagian 4: Percabangan switch-case-default
+switch ($programStudi) {
+	case "SI":
+		$fokusProgramStudi = "Sistem informasi dan proses bisnis";
+		break;
+	case "TI":
+		$fokusProgramStudi = "Komputasi dan pengembangan perangkat lunak";
+		break;
+	default:
+		$fokusProgramStudi = "Belum ditentukan";
+}
+?>
 <!doctype html> 
-<html lang="id"> 
+<html lang="id">
+
   <head> 
     <meta charset="UTF-8" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
@@ -18,8 +63,7 @@
           type="button" 
           aria-label="Buka navigasi" 
           aria-controls="navMenu" 
-          aria-expanded="false" 
-        > 
+          aria-expanded="false" > 
           &#9776; 
         </button> 
       </div> 
@@ -36,7 +80,7 @@
     <main> 
       <section id="home"> 
         <h2>Selamat Datang</h2> 
-        <p>Halo, saya Arini Susilawati. Saya sedang mempelajari Pemrograman Web Dasar.</p> 
+        <p>Halo, saya <strong><?php echo $Arini; ?></strong>. Saya sedang mempelajari matakuliah <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.</p> 
  
         <img src="img/foto-profil.jpg" alt="foto Arini" /> 
       </section> 
@@ -44,16 +88,55 @@
       <section id="about"> 
         <h2>Tentang Saya</h2> 
  
-        <article> 
-          <h3>Profil Singkat</h3> 
-          <p>Saya mahasiswa Program Studi Sistem Informasi.</p> 
+        <article>
+          <h3>Profil Singkat</h3>
+				  <p>Program Studi: <?php echo $namaProdi . " (" . $programStudi . ")"; ?></p>
+				  <p>Fokus program studi: <?php echo $fokusProgramStudi; ?></p>
+				  <p>Status mahasiswa: <?php echo $statusAktif ? "Aktif" : "Tidak aktif"; ?></p>
+				  <p>Semester: <?php echo $semester . " (" . $keteranganSemester . ")"; ?></p>
+				  <p>Sisa semester hingga batas: <?php echo $sisaSemester; ?></p>
+				  <p>Pemeriksaan rentang semester: <?php echo $statusSemester; ?></p>
+				  <p>IPK: <?php echo number_format($ipk, 2, ',', '.'); ?></p>
+				  <p>Catatan tambahan: <?php echo $catatanTambahan === null ? "Belum ada" : $catatanTambahan; ?></p> 
  
-          <h3>Target Belajar</h3> 
- 
-          <ol> 
-            <li>Memahami struktur HTML5.</li> 
-            <li>Menyusun halaman web semantik.</li> 
-            <li>Memvalidasi dokumen HTML.</li> 
+        <h3>Target Belajar (Perulangan for)</h3>
+				<ol>
+					<?php
+					// Perulangan for tanpa array; materi larik dibahas pada P9.
+					for ($i = 1; $i <= 5; $i++) {
+						echo "<li>Target belajar ke-" . $i . ": ";
+						switch ($i) {
+							case 1:
+								echo "Memahami sintaks dasar PHP.";
+								break;
+							case 2:
+								echo "Menggunakan variabel dan konstanta.";
+								break;
+							case 3:
+								echo "Menerapkan operator dan percabangan.";
+								break;
+							case 4:
+								echo "Menggunakan perulangan for dan while.";
+								break;
+							default:
+								echo "Belum dipetakan";
+								break;
+						}
+						echo "</li>";
+					}
+					?>
+        <ol> 
+
+        <h3>Semester (Perulangan while):</h3>
+				<ol>
+					<?php
+					$nomorSemester = 1;
+					while ($nomorSemester <= 3) {
+						echo "<li>Semester " . $nomorSemester . "</li>";
+						$nomorSemester++; // operator penugasan
+					}
+					?>
+        
           </ol> 
         </article> 
       </section> 
@@ -85,14 +168,12 @@
           <div class="form-group"> 
             <label for="email">Email</label><br /> 
  
-            <input class="input-form" type="email" id="email" name="email" 
-placeholder="nama@email.com" required /> 
+            <input class="input-form" type="email" id="email" name="email" placeholder="nama@email.com" required /> 
           </div> 
            <div class="form-group"> 
             <label for="semester">Semester</label><br /> 
  
-            <input class="input-form" type="number" id="semester" name="semester" min="1" max="14" 
-required /> 
+            <input class="input-form" type="number" id="semester" name="semester" min="1" max="14" required /> 
           </div> 
  
           <div class="form-group"> 
@@ -152,8 +233,9 @@ required />
     </main> 
  
     <footer> 
-      <p>&copy; 2026 Nama Mahasiswa [2622500002]</p> 
+      <p>&copy; <?= date("Y") ?> <?php echo $Arini; ?> [<?= $2622500002 ?>]</p> 
     </footer> 
     <script src="script.js"></script> 
   </body> 
+
 </html> 
