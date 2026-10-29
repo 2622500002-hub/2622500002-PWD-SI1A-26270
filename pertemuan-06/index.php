@@ -11,13 +11,13 @@ $statusAktif = true;
 $catatanTambahan = null;
 
 const NAMA_MATA_KULIAH = "Pemrograman Web Dasar";
-const PROFIL_GITHUB = "satpamal";
+const PROFIL_GITHUB = "2622500002-hub";
 
 // Bagian 2: Operator
-$batasSemester = 8;
+$batasSemester = 8; 
 $sisaSemester = $batasSemester - $semester;
 $semesterValid = $semester >= 1 && $semester <= $batasSemester;
-$statusSemester = ($semesterValid && $statusAktif) ? "Sesuai rentang" : "Perlu diperiksa";
+$statusSemester = ($semesterValid && $statusAktif) ? "Perlu diperiksa" : "Sesuai rentang";
 
 // Bagian 3: Percabangan if-elseif-else
 if ($semester < 3) {
