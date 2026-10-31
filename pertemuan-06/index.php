@@ -49,7 +49,7 @@ switch ($programStudi) {
     <meta charset="UTF-8" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     <title>Profil Mahasiswa</title> 
-    <link rel="stylesheet" href="style.css" /> 
+    <link rel="stylesheet" href="style.css"> 
   </head>
 
   <body> 
@@ -82,7 +82,7 @@ switch ($programStudi) {
         <h2>Selamat Datang</h2> 
         <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.</p> 
  
-        <img src="img/foto-profil.jpg" alt="foto Arini" /> 
+        <img src="img/foto-profil.jpg" alt="foto Arini" width="150">
       </section> 
   
       <section id="about">
