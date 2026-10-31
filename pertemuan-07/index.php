@@ -80,9 +80,9 @@ switch ($programStudi) {
     <main> 
       <section id="home"> 
         <h2>Selamat Datang</h2> 
-        <p>Halo, saya <strong><?php echo $Arini; ?></strong>. Saya sedang mempelajari matakuliah <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.</p> 
+        <p>Halo, saya <strong><?php echo $namaMahasiswa; ?></strong>. Saya sedang mempelajari matakuliah <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo $tahunAkademik; ?>.</p> 
  
-        <img src="img/foto-profil.jpg" alt="foto Arini" /> 
+        <img src="img/foto-profil.jpg" alt="foto Arini" width="150"/> 
       </section> 
   
       <section id="about"> 
