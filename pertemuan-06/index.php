@@ -233,7 +233,7 @@ switch ($programStudi) {
     </main> 
  
     <footer> 
-      <p>&copy; <?= date("Y") ?> <?php echo $Arini; ?> [<?= $2622500002 ?>]</p> 
+    <p>&copy; <?= date("Y") ?> <?php echo $Arini; ?> [2622500002]</p>
     </footer> 
     <script src="script.js"></script> 
   </body> 
