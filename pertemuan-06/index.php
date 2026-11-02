@@ -148,7 +148,7 @@ switch ($programStudi) {
           <a href="https://github.com/2622500002-hub">profil GitHub saya</a>. 
         </p> 
  
-        <form id="contactForm" action="index.html" method="get" novalidate> 
+        <form id="contactForm" action="index.php" method="get" novalidate> 
           <div class="form-group"> 
             <label for="nama">Nama Lengkap</label><br /> 
  
@@ -227,7 +227,7 @@ switch ($programStudi) {
           <button type="submit">Kirim</button> 
           <button type="reset">Batal</button> 
           <p id="formFeedback"></p> 
-        </form> 
+        </form>
       </section> 
     </main> 
  
