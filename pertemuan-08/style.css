@@ -2,8 +2,10 @@
 body{
 margin:0;
 font-family: Times New Roman;
+background-color: aqua;
 }
 .header{
+background-image: url("ramen1.png");
 background-color:#c2b5d9; /* warna ungu */
 padding:15px;
 font-size:26px;
@@ -16,7 +18,7 @@ width:100%;
 .sidebar{
 display:table-cell;
 width:15%;
-background:#e8f4f8;
+background:#0e1c21;
 vertical-align:top;
 padding:20px;
 }
@@ -33,7 +35,7 @@ background:url('img/bg.jpg');
 padding:20px;
 }
 .footer{
-background:#c2b5d9;
+background:#514f55;
 padding:10px;
 font-weight:bold;
 }
@@ -47,3 +49,36 @@ input, textarea{
 width:250px;
 padding:5px;
 }
+
+
+button {
+    background-color: #c2b5d9;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #a995c9;
+}
+
+
+/* HEADER DENGAN FOTO BACKGROUND */
+
+.header {
+    background-image: url('ramen3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    padding: 20px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+
+    min-height: 150px;
+    text-shadow: 2px 2px 4px black;
+}
+

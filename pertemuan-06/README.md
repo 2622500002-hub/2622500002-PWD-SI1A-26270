@@ -11,8 +11,8 @@ Program Studi: Sistem Informasi - ISB Atma Luhur
 ## B. Posisi P6 dalam Pengembangan PWD
 P6 melanjutkan artefak P5 (HTML, CSS, JavaScript) sebagai baseline. Pada P6 halaman utama diubah dari `index.html` menjadi `index.php` agar dapat diproses oleh server (server-side) melalui Laragon. Semua komponen P5 tetap dipertahankan di folder `pertemuan-06/`.
 
-Lokasi Proyek:
-Akses localhost: 
+Lokasi Proyek:C:\laragon\www\PWD\2622500002-PWD-SI1A-2627O\2622500002-PWD-SI1A-26270
+Akses localhost: http://localhost/PWD/2622500002-PWD-SI1A-2627O/2622500002-PWD-SI1A-26270/pertemuan-06/
 
 ## C. Capaian Pembelajaran (Sub-CPMK0822)
 1. Menjelaskan cara kerja PHP sebagai bahasa sisi peladen dan menjalankan skrip via peladen lokal

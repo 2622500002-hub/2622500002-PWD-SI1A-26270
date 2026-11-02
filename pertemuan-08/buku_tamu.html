@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Buku Tamu Arini Ramen</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+<div class="header">
+    Web Kuliner Arini Ramen
+</div>
+
+<div class="container">
+
+    <div class="sidebar">
+        <a href="index.html">Home</a>
+        <a href="profil.html">Profil</a>
+        <a href="buku_tamu.html">Buku Tamu</a>
+    </div>
+
+    <div class="content">
+
+        <center>
+            <h2>Buku Tamu Arini Ramen</h2>
+            <p>Silakan isi buku tamu kami</p>
+        </center>
+
+        <form onsubmit="return cekForm()">
+
+            <label>Nama:</label><br>
+            <input type="text" id="nama" placeholder="Masukkan nama"><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" id="email" placeholder="Masukkan email"><br><br>
+
+            <label>Nomor HP:</label><br>
+            <input type="text" id="hp" placeholder="Masukkan nomor HP"><br><br>
+
+            <label>Pesan:</label><br>
+            <textarea id="pesan" rows="5" placeholder="Tuliskan pesan kamu"></textarea><br><br>
+
+            <button type="submit">Kirim</button>
+            <button type="reset">Reset</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<div class="footer">
+    Arini_Ramen_Belinyu
+</div>
+
+</body>
+</html>
