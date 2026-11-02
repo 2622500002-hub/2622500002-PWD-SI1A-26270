@@ -17,7 +17,7 @@ const PROFIL_GITHUB = "2622500002-hub";
 $batasSemester = 8; 
 $sisaSemester = $batasSemester - $semester;
 $semesterValid = $semester >= 1 && $semester <= $batasSemester;
-$statusSemester = ($semesterValid && $statusAktif) ? "Perlu diperiksa" : "Sesuai rentang";
+$statusSemester = ($semesterValid && $statusAktif) ? "Sesuai rentang" : "Perlu diperiksa";
 
 // Bagian 3: Percabangan if-elseif-else
 if ($semester < 3) {
@@ -49,7 +49,7 @@ switch ($programStudi) {
     <meta charset="UTF-8" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     <title>Profil Mahasiswa</title> 
-    <link rel="stylesheet" href="style.css" /> 
+    <link rel="stylesheet" href="./style.css?v=1">
   </head>
 
   <body> 
@@ -101,31 +101,30 @@ switch ($programStudi) {
  
         <h3>Target Belajar (Perulangan for)</h3>
 				<ol>
-					<?php
-					// Perulangan for tanpa array; materi larik dibahas pada P9.
-					for ($i = 1; $i <= 5; $i++) {
-						echo "<li>Target belajar ke-" . $i . ": ";
-						switch ($i) {
-							case 1:
-								echo "Memahami sintaks dasar PHP.";
-								break;
-							case 2:
-								echo "Menggunakan variabel dan konstanta.";
-								break;
-							case 3:
-								echo "Menerapkan operator dan percabangan.";
-								break;
-							case 4:
-								echo "Menggunakan perulangan for dan while.";
-								break;
-							default:
-								echo "Belum dipetakan";
-								break;
-						}
-						echo "</li>";
-					}
-					?>
-        <ol> 
+    <?php
+    for ($i = 1; $i <= 5; $i++) {
+        echo "<li>Target belajar ke-" . $i . ": ";
+
+        switch ($i) {
+            case 1:
+                echo "Memahami sintaks dasar PHP.";
+                break;
+            case 2:
+                echo "Menggunakan variabel dan konstanta.";
+                break;
+            case 3:
+                echo "Menerapkan operator dan percabangan.";
+                break;
+            case 4:
+                echo "Menggunakan perulangan for dan while.";
+                break;
+            default:
+                echo "Belum dipetakan";
+        }
+        echo "</li>";
+    }
+    ?>
+</ol>
 
         <h3>Semester (Perulangan while):</h3>
 				<ol>
@@ -149,7 +148,7 @@ switch ($programStudi) {
           <a href="https://github.com/2622500002-hub">profil GitHub saya</a>. 
         </p> 
  
-        <form id="contactForm" action="index.html" method="get" novalidate> 
+        <form id="contactForm" action="index.php" method="get" novalidate> 
           <div class="form-group"> 
             <label for="nama">Nama Lengkap</label><br /> 
  
@@ -233,8 +232,8 @@ switch ($programStudi) {
     </main> 
  
     <footer> 
-    <p>&copy; <?= date("Y") ?> <?php echo $Arini; ?> [2622500002]</p>
-    </footer> 
+    <p>&copy; <?= date("Y") ?> <?= $namaMahasiswa; ?> [2622500002]</p>
+    </footer>
     <script src="script.js"></script> 
   </body> 
 
