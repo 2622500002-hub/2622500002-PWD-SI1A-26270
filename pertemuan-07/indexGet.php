@@ -7,8 +7,8 @@ if (isset($_GET['nama'])) {
  
 // P6: PHP dasar dan pemrograman sisi peladen 
 // Bagian 1: Variabel dan konstanta 
-$nim = "0344300002"; 
-$namaMahasiswa = "Cantika Putih"; 
+$nim = "2622500002"; 
+$namaMahasiswa = "Arini Susilawati"; 
 $programStudi = "SI"; 
 $tahunAkademik = "2026/2027"; 
 $semester = 4; 
@@ -91,7 +91,7 @@ switch ($programStudi) {
 matakuliah <strong><?php print NAMA_MATA_KULIAH; ?></strong> pada tahun akademik <?php echo 
 $tahunAkademik; ?>.</p> 
  
-      <img src="img/foto-profil.jpg" alt="Foto profil Nama Mahasiswa" /> 
+      <img src="img/foto-profil.jpg" alt="foto Arini" width="150" /> 
     </section> 
  
     <section id="about"> 
@@ -135,7 +135,7 @@ $catatanTambahan; ?></p>
             echo "</li>"; 
           } 
           ?> 
- </ol> 
+        </ol> 
  
         <h3>Semester (Perulangan while):</h3> 
         <ol> 
@@ -155,7 +155,7 @@ $catatanTambahan; ?></p>
  
       <p> 
         Kunjungi 
-        <a target="_blank" href="https://github.com/<?= PROFIL_GITHUB ?>">profil GitHub saya</a>. 
+        <a target="_blank" href="https://github.com/2622500002-hub<?= PROFIL_GITHUB ?>">profil GitHub saya</a>. 
       </p> 
  
       <form id="contactForm" action="indexGet.php" method="get" novalidate> 
@@ -242,7 +242,7 @@ required />
   </main> 
  
   <footer> 
-    <p>&copy; <?= date("Y") ?> <?php echo $namaMahasiswa; ?> [<?= $nim ?>]</p> 
+    <p>&copy; <?= date("Y") ?> <?php echo $namaMahasiswa; ?> [<?= 2622500002 ?>]</p> 
   </footer> 
   <script src="script.js"></script> 
 </body> 
