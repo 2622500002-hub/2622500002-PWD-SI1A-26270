@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Profil Arini Ramen</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style1.css">
 </head>
 <body>
 
@@ -92,5 +92,4 @@ Porsi kecil, tidak pedas, ada sosis dan ayam. Buat anak-anak.</p>
     <footer>
         <p>&copy; 2026 Arini Ramen. All Rights Reserved.</p>
     </footer>
-
 </body>
